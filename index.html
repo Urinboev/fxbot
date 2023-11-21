@@ -57,7 +57,7 @@
     )
       .then((response) => response.json())
       .then(async (json) => {
-        console.log(json);
+        document.querySelector("body").innerHTML = json;
       });
 
 </script>
