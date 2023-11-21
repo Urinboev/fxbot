@@ -52,14 +52,6 @@
 // }
 // await makeSignal();
 
-  fetch(
-      "https://fapi.binance.com/fapi/v1/klines?symbol=ANKRUSDT&interval=1m&limit=300"
-    )
-      .then((response) => response.json())
-      .then(async (json) => {
-        document.querySelector("body").innerHTML = json;
-      });
-
 </script>
 
 </html>
