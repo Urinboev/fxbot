@@ -1,13 +1,13 @@
 {
-  "name" : "FXBOT",
-  "short_name" : "fxbot",
-  "start_url" : ".",
-  "display" : "standalone",
-  "icons" : [
+  "name": "FXBOT",
+  "short_name": "fxbot",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "icons": [
     {
-      "src" : "black-binance-usd-busd-logo.png",
-      "size" : "512x512",
-      "type" : "image/png"
+      "src": "black-binance-usd-busd-logo.png",
+      "size": "512x512",
+      "type": "image/png"
     }
   ]
 }
