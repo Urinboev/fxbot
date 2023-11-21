@@ -4,5 +4,5 @@ if ("serviceWorker" in navigator) {
     console.log(reg);
   }).catch(error => {
     console.log(error)
-  };
+  )};
 }
