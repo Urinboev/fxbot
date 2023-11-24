@@ -10,51 +10,21 @@
 
 <body>
 
+<ul>
+  <li>
+    Type: <span class="type">buy</span>=>
+    Pair: <span class="pair">btcusdt</span>=>
+    Date: <span class="date">buy</span>=>
+    Entry: <span class="entry">buy</span>=>
+    Tp: <span class="tp">buy</span>=>
+    Sl: <span class="sl">buy</span>=>
+    Status: <span class="status">buy</span>=>
+    Actions: <span class="action"><button>tp/sl</button><button>fail</button><button>success</button></span>
+  </li>
+</ul>
+
 </body>
 
-<script>
-  const pairs = [
-  "ANKRUSDT",
-  // "ETHUSDT",
-  // "LTCUSDT",
-  // "TRXUSDT",
-  // "LINKUSDT",
-  // "ADAUSDT",
-  // "BNBUSDT",
-  // "ATOMUSDT",
-  // "IOTAUSDT",
-  // "VETUSDT",
-  // "IOSTUSDT",
-  // "DOGEUSDT",
-  // "RLCUSDT",
-  // "SOLUSDT",
-  // "ICXUSDT",
-  // "UNIUSDT",
-  // "FTMUSDT",
-  // "MATICUSDT",
-  // "REEFUSDT",
-  // "1INCHUSDT",
-];
-
-// async function makeSignal() {
-//   let signals = await all("signals");
-
-//   for (let i = 0; i < pairs.length; i++) {
-//     fetch(
-//       "https://fapi.binance.com/fapi/v1/klines?symbol=" +
-//         pairs[i] +
-//         "&interval=1m&limit=300"
-//     )
-//       .then((response) => response.json())
-//       .then(async (json) => {
-//         console.log(pairs[i]);
-//       });
-//   }
-// }
-// await makeSignal();
-
-</script>
 <script src="app.js"></script>
-<script src="sw.js"></script>
 
 </html>
