@@ -21,19 +21,18 @@ const pairs = [
   // "1INCHUSDT",
 ];
 
-// async function makeSignal() {
-//   let signals = await all("signals");
+async function makeSignal() {
+  for (let i = 0; i < pairs.length; i++) {
+    fetch(
+      "https://fapi.binance.com/fapi/v1/klines?symbol=" +
+        pairs[i] +
+        "&interval=1m&limit=300"
+    )
+      .then((response) => response.json())
+      .then(async (json) => {
+        strategy(json);
+      });
+  }
+}
 
-//   for (let i = 0; i < pairs.length; i++) {
-//     fetch(
-//       "https://fapi.binance.com/fapi/v1/klines?symbol=" +
-//         pairs[i] +
-//         "&interval=1m&limit=300"
-//     )
-//       .then((response) => response.json())
-//       .then(async (json) => {
-//         console.log(pairs[i]);
-//       });
-//   }
-// }
-// await makeSignal();
+makeSignal();
